@@ -1,0 +1,17 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <ScalaCodeStyleSettings>
+      <option name="WRAP_BEFORE_WITH_KEYWORD" value="true" />
+      <option name="MULTILINE_STRING_CLOSING_QUOTES_ON_NEW_LINE" value="true" />
+    </ScalaCodeStyleSettings>
+    <XML>
+      <option name="XML_KEEP_WHITESPACES" value="true" />
+      <option name="XML_ATTRIBUTE_WRAP" value="2" />
+    </XML>
+    <codeStyleSettings language="XML">
+      <option name="RIGHT_MARGIN" value="10" />
+      <option name="WRAP_ON_TYPING" value="1" />
+      <option name="SOFT_MARGINS" value="12" />
+    </codeStyleSettings>
+  </code_scheme>
+</component>
