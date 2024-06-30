@@ -5,6 +5,7 @@ import java.math.BigInteger;
 public class Multiplication_Under_Modulo {
     public static void main(String args[]){
         System.out.println(under_M(92233720368547758L,92233720368547758L, 1000000007));
+        // its a trial.
 
     }
     public static long under_M(long a, long b, long M){
