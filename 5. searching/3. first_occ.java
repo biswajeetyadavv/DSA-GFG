@@ -9,10 +9,10 @@ public class first_occ {
     public static int fir_occ(int[] arr,int start,int end,int target){
         int mid = (start + end)/2;
         if(arr[mid] > target){
-            return fir_occ(arr,start,mid-1,target);
+            end = mid-1;
         }
         else if(arr[mid] < target){
-            return fir_occ(arr,mid+1,end,target);
+           start = mid+1;
 
         }
         else{
@@ -20,7 +20,7 @@ public class first_occ {
                 return mid;
             }
             else{
-                return fir_occ(arr,start,mid-1,target);
+                end = mid-1;
             }
         }
     }
