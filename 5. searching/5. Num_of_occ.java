@@ -31,15 +31,15 @@ public class Num_of_occ {
                 return first_occ(arr,start,mid-1,target);
             }
         }
-        return -1;
+
     }
     public static int last_occ(int[] arr,int start,int end,int target){
         int mid = (start+end)/2;
         if(arr[mid]>target){
-            end = mid-1;
+            return end = mid-1;
         }
         else if(arr[mid]<target){
-            start = mid +1;
+            return start = mid +1;
         }
         else{
             if(mid == 0 || arr[mid+1] != arr[mid]){
@@ -49,6 +49,6 @@ public class Num_of_occ {
                 return last_occ(arr,mid+1,end,target);
             }
         }
-        return -1;
+
     }
 }
