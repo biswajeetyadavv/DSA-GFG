@@ -13,27 +13,30 @@ public class no_of_1s {
         return arr.length-first;
     }
 
-    // -------- THIS PART IS NOT REQUIRED FOR FIND THE NUM OF 1's ------
+
+
+
+    public static int first_occ(int[] arr,int start,int end,int target){
+        int mid = (start + end)/2;
+        if(arr[mid] > target){
+            return end = mid -1;
+        }
+        else if(arr[mid]< target){
+            return start = mid+1;
+        }
+        else{
+            if(mid==0||arr[mid-1] != arr[mid]){
+                return mid;
+            }
+            else{
+                return first_occ(arr,start,mid -1,target);
+            }
+        }
+    }
+
+ // -------- THIS PART IS NOT REQUIRED FOR FIND THE NUM OF 1's ------
     // -----IT CONTAINS THE FUCTION OF FINDING LAST OCC----------
 
-
-    // public static int first_occ(int[] arr,int start,int end,int target){
-    //     int mid = (start + end)/2;
-    //     if(arr[mid] > target){
-    //         return end = mid -1;
-    //     }
-    //     else if(arr[mid]< target){
-    //         return start = mid+1;
-    //     }
-    //     else{
-    //         if(mid==0||arr[mid-1] != arr[mid]){
-    //             return mid;
-    //         }
-    //         else{
-    //             return first_occ(arr,start,mid -1,target);
-    //         }
-    //     }
-    // }
 
     // public static int last_occ(int[] arr,int start,int end,int target){
     //     int mid = (start+end)/2;
